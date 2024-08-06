@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .desktop ul {
+            display: flex;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .desktop ul>li {
+            margin-right: 20px;
+        }
+
+        .menu,
+        .mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            .menu:hover+.mobile {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="desktop">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+    <div class="menu">Menu</div>
+    <div class="mobile">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

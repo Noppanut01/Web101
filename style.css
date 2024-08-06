@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "kanit";
+  src: url(./Kanit/Kanit-Regular.ttf);
+}
+
+body {
+  font-family: "kanit";
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: aliceblue;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 640px;
+}
+
+.header {
+  font-size: 30px;
+  text-align: center;
+}
+
+.header-form {
+  width: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.form-input {
+  margin-bottom: 10px;
+}
+
+input.form,
+textarea {
+  border: 1px solid gainsboro;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border: 0px;
+  width: 50%;
+  height: 40px;
+  background-color: #2962ff;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  .header {
+    font-size: 24px;
+  }
+  .button {
+    width: 100%;
+  }
+}
